@@ -32,6 +32,6 @@ Example
 genres := fma.GetGenres()
 
 for _,genre := range(genres.Genres){
-	
+	fmt.Println(genre.Title)
 }
-``
+```
