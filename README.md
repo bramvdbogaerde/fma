@@ -35,3 +35,23 @@ for _,genre := range(genres.Genres){
 	fmt.Println(genre.Title)
 }
 ```
+### Structs
+#### Track
+```
+type Track struct{
+	Title string `json:"track_title"` // track title
+	Url string `json:"track_url"`     // url to track on freemusicarchive.org
+	ImageFile string `json:"track_image_file"` // image for track
+}
+```
+
+#### Genre
+```
+type Genre struct{
+	Id int `json:"genre_id"` // Genre id (so you can search for tracks with this genre)
+	ParentId int `json:"genre_parent_id"` // Parent id of genre
+	Title string `json:"genre_title"` 	  // Title of genre
+	Handle string `json:"genre_handle"`   //
+	Color string `json:"genre_color"`     // Color as displayed on freemusicarchive.org
+}
+```
