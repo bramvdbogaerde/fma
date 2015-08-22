@@ -10,7 +10,7 @@ __Still work in progress, this isn't finished yet__
 ## Package: fma
 ### Methods
 #### GetFeaturedTracks(page int)
-returns Track[]
+returns Tracks
 
 
 Example
@@ -18,7 +18,20 @@ Example
 // Prints the featured tracks titles
 tracks := fma.GetFeaturedTracks();
 
-for _,track := range(tracks){
+for _,track := range(tracks.Tracks){
 	fmt.Println(track.Title)
 }
 ```
+
+#### GetTracks(params map[string] string)
+return Genres
+
+Example
+```
+// Prints all the available genres
+genres := fma.GetGenres()
+
+for _,genre := range(genres.Genres){
+	
+}
+``
